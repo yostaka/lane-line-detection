@@ -10,8 +10,6 @@
 [image6]: ./test_images_output/6_lane-line-on-masked-edge.png "Line on masked edge"
 [image7]: ./test_images_output/7_lane-lines-on-original-image.png "Lines on Original"
 
-### Reflection
-
 ### 1. Pipeline
 
 My pipeline consisted of following steps.
