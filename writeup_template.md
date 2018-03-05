@@ -6,7 +6,7 @@
 [image2]: ./test_images_output/2_gray-scale.png "Gray Scale"
 [image3]: ./test_images_output/3_blurred-image.png "Blurred"
 [image4]: ./test_images_output/4_edge-image.png "Edge"
-[image5]: ./test_images_output/5_masked_edge-image.png "Masked edge"
+[image5]: ./test_images_output/5_masked-edge-image.png "Masked edge"
 [image6]: ./test_images_output/6_lane-line-on-masked-edge.png "Line on masked edge"
 [image7]: ./test_images_output/7_lane-lines-on-original-image.png "Lines on Original"
 
@@ -38,8 +38,8 @@ My pipeline consisted of following steps.
 
 In order to draw a single line on the left and right lanes, following steps are applied:
 * Group lines detected by Canny Transform into left lane lines and right lane lines. 
-** The slope value of lines are used to determine if it is for left lane line or right lane line.
-** Line with slope values between 0.3 and -0.3 are ignored because these are considered as outliers
+    * The slope value of lines are used to determine if it is for left lane line or right lane line.
+    * Line with slope values between 0.3 and -0.3 are ignored because these are considered as outliers
 * Take (x, y) coordinates of line start and line end, and those cordinates are used as input for linear regression to calculate slope(m) and constant(b) for lane lines
 
 
